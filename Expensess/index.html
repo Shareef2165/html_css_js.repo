@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <main>
+        <section class="budget-section">
+            <form id="budget-form">
+                <input type="text" id="budget-category" placeholder="Category" required>
+                <input type="number" id="budget-amount" placeholder="Budget Amount" required>
+                <button type="submit">Set Budget</button>
+            </form>
+        </section>
+
+        <section class="expense-section">
+            <form id="expense-form">
+                <input type="date" id="expense-date" required>
+                <input type="text" id="expense-category" placeholder="Category" required>
+                <input type="text" id="expense-description" placeholder="Description" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <section class="filter-section">
+            <input type="text" id="search" placeholder="Search Expenses">
+            <select id="filter-category">
+                <option value="">All Categories</option>
+            </select>
+            <input type="date" id="filter-date">
+        </section>
+
+        <section class="expense-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table">
+                   
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

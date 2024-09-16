@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop UI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>TODO</h2>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task1">problem-statement1</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task2">problem-statement2</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task3">problem-statement3</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task4">problem-statement4</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task5">problem-statement5</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task6">problem-statement6</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task7">problem-statement7</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task8">problem-statement8</div>
+        </div>
+        <div class="column" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>In Progress</h2>
+        </div>
+        <div class="column" id="pending" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Pending</h2>
+        </div>
+        <div class="column" id="approved" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Accepted/Approved</h2>
+        </div>
+        <div class="column" id="rejected" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Rejected</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

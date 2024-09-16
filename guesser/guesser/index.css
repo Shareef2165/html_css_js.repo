@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: url(./img/guess.jpg);
+}
+
+.root{
+    font-size: x-large;
+    color:whitesmoke;
+    background-color: rgba(142, 0, 45, 0.1);
+    box-shadow:  0 2px 5px grey;
+    backdrop-filter: blur(5px);
+    padding:  0% 5% 1% 5%;
+    text-align: center;
+    border-radius: 5px  0 ;
+}
+
+.title{
+    border-bottom:  4px ridge ;
+}
+
+input{
+    font-size: 20px;
+    padding-left: 10px;
+    outline: 2px grey;
+}
+
+.foot{
+    margin-bottom: 0%;
+    width:100%;
+    display: flex;
+
+}
+
+.foot > button{
+    width:48%;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(226, 221, 233);
+    border-radius: 5px;
+    border:none;
+    text-transform: capitalize;
+    font-size: large;
+}
+
+
+
